@@ -1,0 +1,16 @@
+com/user/microservice/dto/LoginResponse.class
+com/user/microservice/service/UserService.class
+com/user/microservice/repository/UserRepository.class
+com/user/microservice/service/impl/UserServiceImpl.class
+com/user/microservice/security/CustomUserDetailsService.class
+com/user/microservice/entity/USER_ROLE.class
+com/user/microservice/controller/UserController.class
+com/user/microservice/kafka/KafkaProducerService.class
+com/user/microservice/entity/User.class
+com/user/microservice/UserMicroserviceApplication.class
+com/user/microservice/controller/AuthController.class
+com/user/microservice/config/SecurityConfig.class
+com/user/microservice/security/JwtUtil.class
+com/user/microservice/config/JwtAuthenticationFilter.class
+com/user/microservice/kafka/KafkaConfig.class
+com/user/microservice/dto/LoginRequest.class

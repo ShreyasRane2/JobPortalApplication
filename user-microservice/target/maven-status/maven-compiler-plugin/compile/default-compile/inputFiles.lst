@@ -1,0 +1,16 @@
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/entity/User.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/config/JwtAuthenticationFilter.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/entity/USER_ROLE.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/security/JwtUtil.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/config/SecurityConfig.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/kafka/KafkaConfig.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/controller/UserController.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/UserMicroserviceApplication.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/service/UserService.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/dto/LoginRequest.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/dto/LoginResponse.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/service/impl/UserServiceImpl.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/controller/AuthController.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/repository/UserRepository.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/security/CustomUserDetailsService.java
+/Users/sankalpkhilari/user-ms/src/main/java/com/user/microservice/kafka/KafkaProducerService.java
