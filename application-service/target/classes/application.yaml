@@ -1,0 +1,38 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: APPLICATION-SERVICE
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb
+    username: root
+    password: shreyasrane
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    consumer:
+      group-id: application-service-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+
+# External Service URLs
+job-service:
+  url: http://localhost:8082
+
+user-service:
+  url: http://localhost:5454

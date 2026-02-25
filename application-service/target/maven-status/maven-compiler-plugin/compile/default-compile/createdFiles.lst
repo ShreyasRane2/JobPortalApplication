@@ -1,0 +1,15 @@
+com\jobApplication\config\RestTemplateConfig.class
+com\jobApplication\model\Application.class
+com\jobApplication\client\JobServiceClient.class
+com\jobApplication\controller\DiagnosticController.class
+com\jobApplication\service\ApplicationService.class
+com\jobApplication\client\UserDTO.class
+com\jobApplication\client\JobDTO.class
+com\jobApplication\controller\ApplicationController.class
+com\jobApplication\repository\ApplicationRepository.class
+com\jobApplication\ApplicationServiceApplication.class
+com\jobApplication\client\UserServiceClient.class
+com\jobApplication\kafka\ApplicationEventProducer.class
+com\jobApplication\config\SimpleCorsFilter.class
+com\jobApplication\dto\JobApplicationEvent.class
+com\jobApplication\config\WebConfig.class
