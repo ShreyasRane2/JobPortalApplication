@@ -1,0 +1,290 @@
+/* Additional Responsive Utilities */
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive tables */
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  
+  table thead {
+    display: none;
+  }
+  
+  table tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  table td {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  table td:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Responsive modals */
+.modal {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+}
+
+/* Responsive flex containers */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    gap: 15px;
+  }
+  
+  .flex-item {
+    min-width: 100%;
+  }
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .section {
+    padding: 20px 15px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 15px 10px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Hide elements on mobile */
+.hide-mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* Show only on mobile */
+.show-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .show-mobile {
+    display: block;
+  }
+}
+
+/* Responsive text alignment */
+@media (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center;
+  }
+}
+
+/* Touch-friendly spacing */
+@media (max-width: 768px) {
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+  }
+}
+
+/* Prevent zoom on input focus (iOS) */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Responsive dashboard cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Responsive stat cards */
+.stat-card {
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 15px;
+  }
+}
+
+/* Responsive action buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-buttons button,
+  .action-buttons a {
+    width: 100%;
+  }
+}
+
+/* Responsive search bar */
+.search-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-container input {
+    width: 100%;
+  }
+  
+  .search-container button {
+    width: 100%;
+  }
+}
+
+/* Responsive pagination */
+.pagination {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .pagination button {
+    min-width: 40px;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Responsive container max-widths */
+.container-sm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-md {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-lg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container-sm,
+  .container-md,
+  .container-lg {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-sm,
+  .container-md,
+  .container-lg {
+    padding: 0 10px;
+  }
+}

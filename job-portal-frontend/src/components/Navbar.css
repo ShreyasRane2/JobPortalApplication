@@ -1,0 +1,271 @@
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 15px 0;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.navbar-link:hover {
+  opacity: 0.8;
+}
+
+.navbar-button {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.navbar-button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.navbar-register {
+  background: white;
+  color: #667eea;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Notification Bell */
+.notification-container {
+  position: relative;
+}
+
+.notification-bell {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ff4444;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 350px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.notification-header {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-item {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.notification-item:hover {
+  background: #f0f0f0;
+}
+
+.notification-item.unread {
+  background: #f8f9ff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 15px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .navbar-menu {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: calc(100vh - 60px);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .navbar-menu.active {
+    right: 0;
+  }
+  
+  .navbar-link,
+  .navbar-button,
+  .navbar-register {
+    width: 100%;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 18px;
+  }
+  
+  .navbar-button {
+    border-radius: 8px;
+  }
+  
+  .navbar-register {
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .notification-dropdown {
+    width: 90vw;
+    max-width: 350px;
+    right: -20px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
+  
+  .navbar-logo {
+    font-size: 20px;
+  }
+  
+  .navbar-logo span {
+    font-size: 20px;
+  }
+  
+  .navbar-menu {
+    width: 80%;
+    top: 55px;
+    height: calc(100vh - 55px);
+  }
+  
+  .notification-dropdown {
+    width: 95vw;
+    right: -10px;
+  }
+  
+  .notification-bell {
+    font-size: 20px;
+  }
+}
