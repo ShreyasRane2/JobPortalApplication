@@ -18,7 +18,7 @@ A full-stack job portal platform built with Spring Boot microservices, React fro
 
 🏢 Company Profiles
 
-Detailed company information page.
+
 ## 🛠️ Tech Stack
 
 **Backend:** Spring Boot 3.1.10, Java 21, Spring Security, MySQL 8.0, Apache Kafka  
