@@ -4,13 +4,15 @@ A full-stack job portal platform built with Spring Boot microservices, React fro
 
 ## ✨ Features
 
-- 👤 User authentication with JWT
-- 📝 Job posting and application management
-- � Resume upload and management
-- �🔔 Real-time notifications via Kafka
-- 🛡️ Admin dashboard
-- 🏢 Company profiles
+👤 User Authentication & Authorization
+📝 Job Posting & Application Management
+📄 Resume Upload & Management
+👤 Profile Management
+🔔 Real-Time Notifications
+🛡️ Admin Dashboard
+🏢 Company Profiles
 
+Detailed company information page.
 ## 🛠️ Tech Stack
 
 **Backend:** Spring Boot 3.1.10, Java 21, Spring Security, MySQL 8.0, Apache Kafka  
@@ -38,12 +40,11 @@ Optional: Eureka Server, API Gateway
 # Create databases
 mysql -u root -p
 CREATE DATABASE jobuser;
-CREATE DATABASE jobjob;
-CREATE DATABASE jobapplication;
+CREATE DATABASE userdb1;
+CREATE DATABASE userdb;
 CREATE DATABASE profile_service_db;
 CREATE DATABASE resume_service_db;
-CREATE DATABASE jobnotification;
-CREATE DATABASE jobcompany;
+CREATE DATABASE notificationdb2;
 ```
 
 2. Setup Kafka
@@ -87,9 +88,6 @@ mvn spring-boot:run
 cd admin-dashboard-microservice
 mvn spring-boot:run
 
-# Company Service (new terminal)
-cd company-microservice
-mvn spring-boot:run
 ```
 
 ### 4. Start Frontend
@@ -109,7 +107,6 @@ Frontend: http://localhost:3000
 ```
 ├── user-microservice/           # Authentication & user management (Port 5454)
 ├── job-microservice/            # Job postings (Port 8082)
-├── company-microservice/        # Company profiles (Port 8083)
 ├── application-service/         # Job applications (Port 8087)
 ├── profile_management/          # User profiles (Port 8088)
 ├── resume/                      # Resume management (Port 8090)
@@ -135,4 +132,4 @@ Frontend: http://localhost:3000
 
 ### Database Configuration
 
-Update `application.properties` in each service:
+Update `application.properties` in each service
