@@ -1,6 +1,6 @@
-# 🚀 Job Portal - Microservices Application
+# 🚀 Job Portal Application - Microservices Application
 
-A full-stack job portal platform built with Spring Boot microservices, React frontend, and Apache Kafka for real-time notifications.
+A full-stack job portal application platform built with Spring Boot microservices, React frontend, and Apache Kafka for real-time notifications.
 
 ## ✨ Features
 
