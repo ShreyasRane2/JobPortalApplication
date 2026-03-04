@@ -5,11 +5,17 @@ A full-stack job portal platform built with Spring Boot microservices, React fro
 ## ✨ Features
 
 👤 User Authentication & Authorization
+
 📝 Job Posting & Application Management
+
 📄 Resume Upload & Management
+
 👤 Profile Management
+
 🔔 Real-Time Notifications
+
 🛡️ Admin Dashboard
+
 🏢 Company Profiles
 
 Detailed company information page.
