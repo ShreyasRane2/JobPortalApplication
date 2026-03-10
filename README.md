@@ -27,7 +27,7 @@ A full-stack job portal application platform built with Spring Boot microservice
 
 ## 🏗️ Architecture
 
-8 microservices: User, Job, Application, Profile, Resume, Notification, Admin, Company  
+7 microservices: User, Job, Application, Profile, Resume, Notification, Admin, Company  
 Optional: Eureka Server, API Gateway
 
 ## 📋 Prerequisites
